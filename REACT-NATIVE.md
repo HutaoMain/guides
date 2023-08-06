@@ -1,17 +1,20 @@
-/_ main package of react-navigation _/
+**how to create expo typescript**
+npx create-expo-app -t expo-template-blank-typescript
+
+**install this after you created expo app**
+npm i react-native-gesture-handler react-native-screens react-native-safe-area-context
+
+**main package of react-navigation**
 npm install @react-navigation/native
 
-/_ use to have bottom tabs _/
+**use to have bottom tabs**
 @react-navigation/bottom-tabs
 
-/_ use for stacking screen _/
+**use for stacking screen**
 @react-navigation/native-stack
 
-/_ use for drawer like draw navbar in the side of the screen _/
+**use for drawer like draw navbar in the side of the screen**
 @react-navigation/drawer
 
-/_ use for top navbar _/
+**use for top navbar**
 @react-navigation/material-top-tabs react-native-tab-view
-
-/_ how to create expo typescript _/
-npx create-expo-app -t expo-template-blank-typescript
