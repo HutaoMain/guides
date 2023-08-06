@@ -1,4 +1,5 @@
 **how to create expo typescript**
+
 ```
 npx create-expo-app -t expo-template-blank-typescript
 ```
@@ -28,6 +29,7 @@ npm install @react-navigation/native
 ```
 
 **use for drawer like draw navbar in the side of the screen**
+
 ```
 @react-navigation/drawer
 ```
