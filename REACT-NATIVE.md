@@ -39,3 +39,15 @@ npm install @react-navigation/native
 ```
 @react-navigation/material-top-tabs react-native-tab-view
 ```
+
+**Expo error: Could not determine the dependencies of task ‘:app:buildReleasePreBundle’.**
+
+```
+npx expo prebuild --clean
+```
+
+**Expo APK**
+
+```
+eas build -p android --profile preview
+```
