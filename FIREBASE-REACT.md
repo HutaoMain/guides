@@ -1,6 +1,6 @@
 **list down all from a collection**
 
-```
+```js
   const [bmiData, setBmiData] = useState<IBMIData[]>([]);
 
   const bmiCollectionRef = collection(db, "bmiResult");
