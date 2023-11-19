@@ -51,3 +51,19 @@ npx expo prebuild --clean
 ```
 eas build -p android --profile preview
 ```
+
+**REACT NATIVE CLI APK**
+
+```
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+```
+
+```
+cd android
+```
+
+**You will find your apk here**
+
+```
+yourProject/android/app/build/outputs/apk/debug/app-debug.apk
+```
