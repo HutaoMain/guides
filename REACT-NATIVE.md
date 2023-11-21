@@ -62,6 +62,11 @@ react-native bundle --platform android --dev false --entry-file index.js --bundl
 cd android
 ```
 
+```
+./gradlew assembleDebug
+
+```
+
 **You will find your apk here**
 
 ```
