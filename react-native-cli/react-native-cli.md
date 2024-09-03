@@ -41,7 +41,7 @@ npm install --save-dev @types/react-native-vector-icons
 3. Run the following command in your terminal:
 
 ```bash
-react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
 ```
 
 4. In Android Studio, go to Build -> Build Bundle(s) / APK(s) -> Build APK(s).

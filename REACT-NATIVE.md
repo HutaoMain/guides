@@ -1,48 +1,74 @@
-# React Native and Expo Setup Guide
+**how to create expo typescript**
 
-## Expo TypeScript Setup
-
-To create an Expo TypeScript project:
-
-```bash
+```
 npx create-expo-app -t expo-template-blank-typescript
 ```
 
-After creating the Expo app, install these additional packages:
+**install this after you created expo app**
 
-```bash
+```
 npm i react-native-gesture-handler react-native-screens react-native-safe-area-context
 ```
 
-## React Navigation Setup
+**main package of react-navigation**
 
-Install the main package of react-navigation:
-
-```bash
+```
 npm install @react-navigation/native
 ```
 
-Additional navigation packages:
+**use to have bottom tabs**
 
-- For bottom tabs: `@react-navigation/bottom-tabs`
-- For stacking screens: `@react-navigation/native-stack`
-- For drawer navigation: `@react-navigation/drawer`
-- For top navbar: `@react-navigation/material-top-tabs react-native-tab-view`
+```
+@react-navigation/bottom-tabs
+```
 
-## Troubleshooting
+**use for stacking screen**
 
-If you encounter the Expo error: "Could not determine the dependencies of task ':app:buildReleasePreBundle'", run:
+```
+@react-navigation/native-stack
+```
 
-```bash
+**use for drawer like draw navbar in the side of the screen**
+
+```
+@react-navigation/drawer
+```
+
+**use for top navbar**
+
+```
+@react-navigation/material-top-tabs react-native-tab-view
+```
+
+**Expo error: Could not determine the dependencies of task ‘:app:buildReleasePreBundle’.**
+
+```
 npx expo prebuild --clean
 ```
 
-## Building APKs
+**Expo APK**
 
-### Expo APK
-
-To build an APK with Expo:
-
-```bash
+```
 eas build -p android --profile preview
+```
+
+**REACT NATIVE CLI APK**
+
+```
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+```
+
+```
+cd android
+```
+
+```
+./gradlew assembleDebug
+
+```
+
+**You will find your aab here**
+
+```
+yourProject/android/app/build/outputs/apk/debug/app-debug.apk
 ```
